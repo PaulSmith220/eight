@@ -2,5 +2,9 @@
 <resources>
     <string name="app_name">eight</string>
     <string name="pass_main">123</string>
+    <string name="pass_1">bayes</string>
+    <string name="pass_2">kate</string>
     <string name="page_0_title">Привет! Что-то тут этакое спрятано, но чтобы узнать что, тебе нужен пароль =)</string>
+    <string name="screen_zero">Итак, муж вынуждает тебя делать всякие глупости. Крепись, всё не так страшно, как кажется :) \n Вот твоя первая подсказка:</string>
+    <string name="screen_2">Ого! Ты молодец. Но это ещё только начало. Следующая подсказка ждёт тебя где-то там...</string>
 </resources>
