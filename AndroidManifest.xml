@@ -15,5 +15,6 @@
         </activity>
         <activity android:name=".Screen_1Activity" android:label="Задача 1"></activity>
         <activity android:name=".Screen_2Activity" android:label="Задача 2"/>
+        <activity android:name=".Screen_3Activity" android:label="Задача 3"/>
     </application>
 </manifest>

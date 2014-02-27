@@ -4,24 +4,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/screen_2"
-            android:id="@+id/textView" android:layout_x="12dp" android:layout_y="7dp"/>
-    <ImageView
-            android:layout_width="197dp"
-            android:layout_height="181dp"
-            android:id="@+id/imageView" android:layout_x="50dp" android:layout_y="90dp"
-            android:src="@drawable/mailbox"/>
-    <EditText
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/pass_1" android:layout_x="11dp" android:layout_y="270dp" android:hint="Пароль"
-            android:inputType="text"/>
-    <Button
+    <ScrollView
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="OK"
-            android:id="@+id/bs_1" android:layout_x="0dp" android:layout_y="320dp"/>
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" android:layout_x="1dp" android:layout_y="-1dp" android:fillViewport="false">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_2_2"
+                      android:id="@+id/textView1" android:layout_x="6dp" android:layout_y="270dp"
+                      android:layout_marginTop="270dp"/>
+            <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/imageView" android:layout_x="62dp" android:layout_y="60dp"
+                    android:src="@drawable/electrobox_kr"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true" android:layout_marginTop="340dp"
+                    android:layout_centerHorizontal="true"/>
+            <ImageView android:layout_width="200dp" android:layout_height="200dp" android:id="@+id/imageView1"
+                       android:layout_x="62dp" android:layout_y="60dp" android:src="@drawable/electrobox"
+                       android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+                       android:layout_marginTop="60dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/screen_2"
+                    android:id="@+id/textView" android:layout_x="12dp" android:layout_y="7dp"
+                    android:layout_alignParentLeft="true"/>
+            <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pass_2"
+                    android:layout_below="@+id/imageView"
+                    android:textStyle="bold" android:inputType="number" android:hint="Пароль слитно"
+                    android:layout_centerHorizontal="true" android:layout_marginTop="5dp"
+                    android:linksClickable="false"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:id="@+id/button"
+                    android:layout_below="@+id/pass_2" android:layout_marginTop="5dp" android:onClick="goStep3"/>
+        </RelativeLayout>
+    </ScrollView>
 </AbsoluteLayout>

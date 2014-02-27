@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:text="@string/screen_3"
+            android:id="@+id/textView" android:layout_x="32dp" android:layout_y="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q_screen_3"
+            android:id="@+id/scr3_q" android:layout_x="60dp" android:layout_y="180dp" android:textStyle="bold|italic"
+            android:visibility="invisible"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подсказка"
+            android:id="@+id/checkBox" android:layout_x="60dp" android:layout_y="220dp" android:onClick="showQ"/>
+</AbsoluteLayout>

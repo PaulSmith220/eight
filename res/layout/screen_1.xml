@@ -23,5 +23,5 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="OK"
-            android:id="@+id/bs_1" android:layout_x="0dp" android:layout_y="320dp"/>
+            android:id="@+id/bs_1" android:layout_x="0dp" android:layout_y="320dp" android:onClick="goToStep2"/>
 </AbsoluteLayout>
